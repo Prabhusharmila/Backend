@@ -18,7 +18,7 @@ mongoose.connect(database.db, {
   }
 )
 
-const studentAPI = require('../routes/student.route')
+const studentAPI = require('./routes/student.route')
 const header = {
   origin:'*'
 };
