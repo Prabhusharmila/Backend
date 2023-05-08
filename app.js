@@ -43,7 +43,7 @@ const server = app.listen(port, () => {
 
 app.use(express.static('public'));
 
-app.get('/index',function(req,res) {
+app.get('/',function(req,res) {
     res.sendFile(__dirname + '/public/index.html');
   });
 // Find 404
