@@ -41,12 +41,13 @@ const server = app.listen(port, () => {
   console.log('Connected to port ' + port)
 })
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
-app.get('/',function(req,res) {
-    res.sendFile(__dirname + '/public/index.html');
-  });
+// app.get('/',function(req,res) {
+//     res.sendFile(__dirname + '/public/index.html');
+//   });
 // Find 404
+
 app.use((req, res, next) => {
   next(createError(404));
 });
